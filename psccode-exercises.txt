@@ -1,0 +1,51 @@
+// Exercise 1: Calculate the Sum of Two Numbers
+
+set number 1 as variable x
+set number 2 as variable y
+do arithmetic
+	set z = x+y
+print z to screen or output 
+
+// Exercise 2: Check if a Number is Even or Odd
+
+set number 1 as variable x 
+do arithmetic
+	if x modulus 2 = 0 print "number 1 is even" 
+	else if x modulus 2 does not equal 0 print "number 1 is odd" 
+	else print "something went wrong here" 
+
+// Exercise 3: 
+Write pseudo code that will perform the following.    
+
+a) Read in 5 separate numbers.   
+b) Calculate the average of the five numbers.
+c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
+d) Write out the results found from steps b and c with a message describing what they are
+
+get the 5 numbers input as different variables 
+	set number 1 = a
+	set number 2 = b
+	set number 3 = c
+	set number 4 = d
+	set number 5 = e
+
+make a list variable of the the input numbers 
+	set list = [a b c d e] as an array (this will be in the order entered)
+		
+
+do the arithmetic 
+	set sum = sum function (a through e) or a+b+c+d+e
+	do sum divided by number of input numbers (could do a count function for scale, or just sum/5)
+		set avg = sum/5
+			
+use the list variable to get the min and max values 
+	set mininum = min(list) -- shouldn't need to sort but may be necessary, most things have a min(array) function
+	set maximum = max(list)
+
+print results 
+	"the entered numbers are:" a b c d e 
+	"their average is:" avg
+	"the minimum value is:" min
+	"the maximum value is:" max
+
+-- END --
