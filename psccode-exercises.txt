@@ -23,19 +23,21 @@ c) Find the smallest (minimum) and largest (maximum) of the five entered numbers
 d) Write out the results found from steps b and c with a message describing what they are
 
 get the 5 numbers input as different variables 
-	set number 1 = a
-	set number 2 = b
-	set number 3 = c
-	set number 4 = d
-	set number 5 = e
+create user form with 5 input text boxes
+could put validation code or regex on boxes to ensure they're numeric 
+give button or option to submit
+	set input number 1 = a
+	set input number 2 = b
+	set input number 3 = c
+	set input number 4 = d
+	set input number 5 = e
 
 make a list variable of the the input numbers 
-	set list = [a b c d e] as an array (this will be in the order entered)
-		
+	set list = [a b c d e] as an array (this would be in the order entered)
 
 do the arithmetic 
 	set sum = sum function (a through e) or a+b+c+d+e
-	do sum divided by number of input numbers (could do a count function for scale, or just sum/5)
+	do sum divided by number of input numbers (could do a count function for scaling, or just sum/5)
 		set avg = sum/5
 			
 use the list variable to get the min and max values 
